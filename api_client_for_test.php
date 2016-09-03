@@ -9,7 +9,8 @@ $options = array(
 		CURLOPT_AUTOREFERER => true,
 );
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://localhost/poker/api.php");
+curl_setopt($ch, CURLOPT_URL, "https://poker-20160903.herokuapp.com/api.php");
+// curl_setopt($ch, CURLOPT_URL, "http://localhost/poker/api.php");
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
